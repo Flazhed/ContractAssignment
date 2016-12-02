@@ -10,6 +10,12 @@ namespace ContractAssignment
     {
         static void Main(string[] args)
         {
+
+            Account acc = new Account(100);
+            Console.WriteLine(acc.Deposit(50));
+            Console.WriteLine(acc.Withdraw(50));
+            Console.ReadKey();
+
         }
     }
 }
