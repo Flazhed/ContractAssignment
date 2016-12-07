@@ -10,10 +10,17 @@ namespace ContractAssignment
     {
         static void Main(string[] args)
         {
-
+            try { 
             Account acc = new Account(100);
-            Console.WriteLine(acc.Deposit(50));
-            Console.WriteLine(acc.Withdraw(50));
+            //Console.WriteLine(acc.Deposit(50));
+            //Console.WriteLine(acc.Withdraw(50));
+            Console.WriteLine(acc.Withdraw(9000));
+            }
+            catch(InvalidWithDraw ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             Console.ReadKey();
 
         }
